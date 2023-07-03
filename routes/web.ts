@@ -1,19 +1,23 @@
 import { Router } from "express";
 
-//import from controllers folder
-import ApiController from "../app/controllers/ApiController";
+/**Controller application here**/
 
+/**Routes end here**/
 
-export default function(router:Router):void{
+const router:Router = Router();
+
+export default function():Router{
 
    /**
-    * 
+    *
     * Define your routes here
-    * 
-    * **/ 
+    *
+    * **/
 
-   router.get("/hello",ApiController);
 
-   
 
+
+    /**Routes end here**/
+
+   return router;
 };

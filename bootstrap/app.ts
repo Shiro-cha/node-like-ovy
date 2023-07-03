@@ -1,4 +1,4 @@
-import express,{Express} from "express";
+import express,{Express,Router} from "express";
 import api from "../routes/api";
 import web from "../routes/web";
 
@@ -11,9 +11,11 @@ const app:Express = express();
 
 
 //appeler ici les routes
+/** Route for api **/
+  app.use("/api",api());
 
-
-
+/** Route for web **/
+  app.use("/",web());
 
 
 export default app;
